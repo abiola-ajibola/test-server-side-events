@@ -1,0 +1,13 @@
+{
+  "name": "server-side-events",
+  "version": "0.0.1",
+  "description": "A server that implements server side events",
+  "main": "server.js",
+  "author": "Abiola",
+  "type": "module",
+  "license": "MIT",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.17.3"
+  }
+}
