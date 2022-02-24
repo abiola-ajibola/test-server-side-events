@@ -12,11 +12,6 @@ app.use(express.urlencoded({ extended: false }));
 let facts = [],
   clients = [];
 
-app.get("/status", (req, res) => {
-  console.log({ facts, clients });
-  res.json({ status: "ok" });
-});
-
 app.get("/events", (req, res) => {
   eventsHandler(req, res)({ clients, facts });
   console.log("Event registered");
